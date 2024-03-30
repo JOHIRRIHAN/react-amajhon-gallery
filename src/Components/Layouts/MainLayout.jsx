@@ -4,7 +4,7 @@ import Footer from "../Footer/Footer";
 const MainLayout = () => {
   return (
     <>
-    <div className="navbar bg-base-100 justify-between px-10 shadow-2xl">
+    <navbar className="navbar bg-base-100 justify-between px-10 shadow-2xl">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -42,7 +42,7 @@ const MainLayout = () => {
         </ul>
       </div>
      
-    </div>
+    </navbar>
     <Outlet></Outlet>
     <Footer></Footer>
     
