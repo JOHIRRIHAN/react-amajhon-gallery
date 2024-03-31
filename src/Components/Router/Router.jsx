@@ -4,6 +4,9 @@ import Home from "../Home/Home";
 import Products from "../Products/Products";
 import DashBoard from "../DashBoard/DashBoard";
 import Product from "../Product/Product";
+import DashBoards from "../DashBoards/DashBoards";
+import Profile from "../Profile/Profile";
+import EditProfile from "../EditProfile/EditProfile";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +31,20 @@ const router = createBrowserRouter([
       {
         path: "/dashboard",
         element: <DashBoard></DashBoard>,
+        children: [
+            {
+                path: '/dashboard',
+                element: <DashBoards></DashBoards>,
+            },
+            {
+                path: '/dashboard/profile',
+                element: <Profile></Profile>,
+            },
+            {
+                path: '/dashboard/editprofile',
+                element: <EditProfile></EditProfile>,
+            },
+        ]
       },
     ],
   },

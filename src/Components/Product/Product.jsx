@@ -7,7 +7,7 @@ const Product = () => {
 
   const product = useLoaderData();
   //   console.log(product);
-
+  
   const { title, description, thumbnail, price,  brand } = product || {};
 
   return (
